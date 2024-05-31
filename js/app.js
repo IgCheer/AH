@@ -7997,7 +7997,7 @@
                     const product = document.querySelector(`[data-pid="${productId}"]`);
                     const cartProductImage = product.querySelector(".images-product__slide-ibg").innerHTML;
                     const cartProductTitle = product.querySelector(".body-product__title ").innerHTML;
-                    const cartProductContent = `\n                  <a href="" class="cart-list__image -ibg">${cartProductImage}</a>\n                  <div class="cart-list__body">\n                      <a href="" class="cart-list__title">${cartProductTitle}</a>\n                      <div class="cart-list__quantity">Количество: <span>1</span></div>\n                      <a href="" class="cart-list__delete">Удалить</a>\n                  </div>`;
+                    const cartProductContent = `\n                  <a href="#" class="cart-list__image -ibg">${cartProductImage}</a>\n                  <div class="cart-list__body">\n                      <a href="#" class="cart-list__title">${cartProductTitle}</a>\n                      <div class="cart-list__quantity">Количество: <span>1</span></div>\n                      <a href="#" class="cart-list__delete">Удалить</a>\n                  </div>`;
                     cartList.insertAdjacentHTML("beforeend", `<li data-cart-pid="${productId}" class="cart-list__item">${cartProductContent}</li>`);
                 } else {
                     const cartProductQuantity = cartProduct.querySelector(".cart-list__quantity span");
